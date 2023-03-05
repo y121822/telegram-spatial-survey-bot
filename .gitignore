@@ -1,0 +1,8 @@
+.idea
+venv
+SQL
+misc
+__pycache__
+.env
+temp?.py
+*.sh
