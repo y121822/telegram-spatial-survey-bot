@@ -5,7 +5,7 @@
 ## Description
 Being inspired by the convenience and functionality of ArcGIS Survey 123,
 a spatial data gathering solution for Esri products, the author decided to challenge his
-skills creating another survey solution in the form of a Telegram bot which collects 
+skills by creating another survey solution in the form of a Telegram bot which collects 
 coordinates of spatial objects, their text and media description. Collected data can be 
 viewed as a Web Map, freely downloaded as a Shapefile or GeoJSON and then can be used 
 in any GIS software for further processing and analysis.  
