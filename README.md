@@ -11,9 +11,9 @@ viewed as a Web Map, freely downloaded as a Shapefile or GeoJSON and then can be
 in any GIS software for further processing and analysis.  
 
 ## Usage
-Find SpatialSurveyBot in Telegram. Press START(<b style="color:#1589F0;">/start</b> 
+Find SpatialSurveyBot in Telegram. Press START (<b>/start</b> 
 command can be used anytime to return to the first step of the bot). Then follow the 
-prompts. 
+prompts: 
 - Create Survey (the creator can collect, view and download data, participants have
 the collect only permission)
 - Set questions for your survey
@@ -39,7 +39,7 @@ was chosen.
 
 - Two Amazon S3 buckets were created. One for connecting the current repository to AWS 
 via Amazon CodeDeploy. Another as a media file storage with the proper permissions and
-Amazon CloudFront as a CDN. Every bucket has access point for connecting to a VPC 
+Amazon CloudFront as a CDN. Every bucket has the access point for connecting to a VPC 
 via its endpoint.
 - The Virtual Private Cloud (VPC) was created in an AWS region with several subnets
 in different availability zones (AZ) of the region. The Internet gateway was assigned 
