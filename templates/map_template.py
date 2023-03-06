@@ -107,9 +107,9 @@ html_3 = '''
         }    
     }).addTo(map);
 
-    var baseMaps = {
-        "Map": CartoDB_Positron,
-        "Imagery": Esri_WorldImagery
+    var baseMaps = {        
+        "Imagery": Esri_WorldImagery,
+        "Map": CartoDB_Positron
     };
     var vectorL = {
         "Points": Points,
