@@ -86,7 +86,7 @@ html_3 = '''
             <br>
             <b>Video:</b> ${feature.properties.video}           
             <br>
-            <b>Photo:</b> <a>${feature.properties.photo}</a>
+            <b>Photo:</b> ${feature.properties.photo}
             </p>`);
         }
     }).addTo(map);
