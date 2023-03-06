@@ -628,95 +628,95 @@ class Result:
 
     @property
     def result_webmap(self):
-        return  (b'<!doctype html>\n<html lang="en">\n<head>\n    <link rel="stylesheet" href='
-                 b'"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"\n          integrity="'
-                 b'sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZ'
-                 b'MZ19scR4PsZChSR7A=="\n          crossorigin=""/>\n    <style>\n        body'
-                 b'{background-color: #3d85c6;}\n        #main {\n            height: 84vh;\n '
-                 b'           width: 90vw;\n            margin: 0;\n            position: abs'
-                 b'olute;\n            top: 50%;\n            left: 50%;\n            -ms-tran'
-                 b'sform: translate(-50%, -50%);\n            transform: translate(-50%, -50'
-                 b'%);\n        }\n        .mapid{\n            height: 79vh;\n            widt'
-                 b'h: 90vw;\n        }\n        #Pic{\n            width: 100%;\n        }\n'
-                 b'        #topbar{            \n            margin-left: auto;\n            '
-                 b'margin-right: auto;\n            left: 0;\n            right: 0;\n         '
-                 b'   text-align: center; \n            padding: 1px;\n            color: whi'
-                 b'te;           \n        }\n    </style>\n    <script src="https://unpkg.com'
-                 b'/leaflet@1.7.1/dist/leaflet.js"\n            integrity="sha512-XQoYMqMTK8'
-                 b'LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA'
-                 b'=="\n            crossorigin=""></script>\n    <title>Telegram bot</title>'
-                 b'\n</head>\n<body>\n    <div id = main>\n    <div id="topbar"><b>Name35</b>, '
-                 b'click an object for the popup</div>\n    <div id="mapid" class="mapid"></'
-                 b'div>\n    </div>    \n<script>\n    "use strict"\n    var Source_point ='
-                 b" {'crs': {'properties': {'name': 'urn:ogc:def:crs:OGC:1.3:CRS84'}, 'type': '"
-                 b"name'}, 'features': [{'geometry': {'coordinates': [45.0, 45.0], 'type': 'Poi"
-                 b'nt\'}, \'properties\': {\'photo\': \'<a href="https://telegra.ph/test_path'
-                 b'_photo35"><img id="Pic" src="https://telegra.ph/test_path_photo35"></a>\''
-                 b", 'question': '<br>question35_1: answer35_1<br>question35_2: answer35_2<br>'"
-                 b", 'time': '2021-11-20 22:45:00', 'user': 'Name35', 'video': '<a href"
-                 b'="https://telegra.ph/test_path_video35">Click the link.</a>\'}, \'type\': \''
-                 b"Feature'}, {'geometry': {'coordinates': [-45.0, -45.0], 'type': 'Point'}, 'p"
-                 b"roperties': {'photo': 'None', 'question': '<br>question35_1: answer35_1<br>q"
-                 b"uestion35_2: answer35_2<br>', 'time': '2021-11-20 22:45:00', 'user': 'Name35"
-                 b"', 'video': 'None '}, 'type': 'Feature'}], 'name': 'Places', 'type': 'Featur"
-                 b"eCollection'};\n    var Source_polygon = {'crs': {'properties': {'name': "
-                 b"'urn:ogc:def:crs:OGC:1.3:CRS84'}, 'type': 'name'}, 'features': [{'geometry':"
-                 b" {'coordinates': [[[[30.0, 30.0], [-30.0, -30.0], [10.0, 20.0], [30.0, 30.0]"
-                 b']]], \'type\': \'MultiPolygon\'}, \'properties\': {\'photo\': \'<a href="'
-                 b'https://telegra.ph/test_path_photo36"><img id="Pic" src="https://telegra.ph/'
-                 b'test_path_photo36"></a>\', \'question\': \'<br>question35_1: answer36_1<br>q'
-                 b"uestion35_2: answer36_2<br>', 'time': '2021-11-20 22:45:00', 'user': 'Name36"
-                 b'\', \'video\': \'<a href="https://telegra.ph/test_path_video36">Click the li'
-                 b"nk.</a>'}, 'type': 'Feature'}, {'geometry': {'coordinates': [[[[40.0, 10.0],"
-                 b" [-40.0, -10.0], [70.0, 20.0], [40.0, 10.0]]]], 'type': 'MultiPolygon'}, 'pr"
-                 b'operties\': {\'photo\': \'<a href="https://telegra.ph/test_path_photo37"><im'
-                 b'g id="Pic" src="https://telegra.ph/test_path_photo37"></a>\', \'question\':'
-                 b" '<br>question35_1: answer37_1<br>question35_2: answer37_2<br>', 'time': '20"
-                 b'21-11-20 22:45:00\', \'user\': \'Name37\', \'video\': \'<a href="https://tel'
-                 b'egra.ph/test_path_video37">Click the link.</a>\'}, \'type\': \'Feature\'}'
-                 b"], 'name': 'Places', 'type': 'FeatureCollection'};\n    var map = L.map('"
-                 b"mapid', {\n        center: [0.000000,12.500000],\n        zoom: 1\n    });\n"
-                 b"    var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/li"
-                 b'ght_all/{z}/{x}/{y}{r}.png\', {\n        attribution: \'&copy; <a href="htt'
-                 b'ps://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; '
-                 b'\' +\n            \'<a href="https://carto.com/attributions">CARTO</a>\''
-                 b",\n        subdomains: 'abcd',\n        maxZoom: 19\n    }).addTo(map);\n   "
-                 b" var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS"
-                 b"/rest/services/World_Imagery/'+\n    'MapServer/tile/{z}/{y}/{x}', {\tattr"
-                 b"ibution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX,'"
-                 b"+\n    'GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User"
-                 b" Community'\n    });\n    var Points = L.geoJSON(Source_point,{\n        po"
-                 b'intToLayer: function (feature, latlng) {\n            return L.marker(lat'
-                 b"lng, {icon: L.icon({\n                    iconUrl: 'https://d2hbboszmbfzj"
-                 b'c.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002dd'
-                 b"b1a42.png',\n                    iconSize: [50, 50],\n                    "
-                 b'iconAnchor: [10, 10],\n                    popupAnchor: [0, -10]\n        '
-                 b'        })})\n        },\n        onEachFeature: function(feature, layer) '
-                 b'{\n            layer.bindPopup(`\n            <p><b>Name:</b> ${feature.pr'
-                 b'operties.user}\n            <br>\n            <b>Date/Time (non-local):</b'
-                 b'> ${feature.properties.time}\n            <br>\n            <b>Question:</'
-                 b'b> ${feature.properties.question}            \n            <b>Latitude:</'
-                 b'b> <i>${feature.geometry.coordinates[1].toFixed(4)}</i>,\n            <b>'
-                 b'Longitude:</b> <i>${feature.geometry.coordinates[0].toFixed(4)}</i>\n    '
-                 b'        <br>\n            <b>Video:</b> ${feature.properties.video}      '
-                 b'     \n            <br>\n            <b>Photo:</b> ${feature.properties.ph'
-                 b'oto}\n            </p>`);\n        }\n    }).addTo(map);\n\n    var Polyg'
-                 b'ons = L.geoJSON(Source_polygon,\n        {style: {},\n        onEachFeatur'
-                 b'e: function(feature, layer) {\n            layer.bindPopup(`\n            '
-                 b'<p><b>Name:</b> ${feature.properties.user}\n            <br>\n            '
-                 b'<b>Date/Time (non-local):</b> ${feature.properties.time}\n            <br'
-                 b'>\n            <b>Question:</b> ${feature.properties.question}\n          '
-                 b'  <b>Video:</b> ${feature.properties.video}           \n            <br>\n'
-                 b'            <b>Photo:</b> ${feature.properties.photo}\n            </p>`)'
-                 b';\n        }    \n    }).addTo(map);\n\n    var baseMaps = {\n        "Ma'
-                 b'p": CartoDB_Positron,\n        "Imagery": Esri_WorldImagery\n    };\n    va'
-                 b'r vectorL = {\n        "Points": Points,\n        "Polygons":Polygons\n    '
-                 b'};\n    L.control.layers(baseMaps,vectorL).addTo(map);\n    var count = 0\n'
-                 b'    var scbr = L.control.scale({imperial:false})\n    map.addEventListene'
-                 b'r("zoomend",function (){\n        if (map.getZoom() > 5 && count === 0){\n'
-                 b'            scbr.addTo(map);\n            count ++;\n        }\n        els'
-                 b'e if (map.getZoom() <= 5) {\n            scbr.remove();\n            count'
-                 b' = 0;\n        }\n    })\n</script>\n</body>\n</html> ')
+        return (b'<!doctype html>\n<html lang="en">\n<head>\n    <link rel="stylesheet" href='
+                b'"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"\n          integrity="'
+                b'sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZ'
+                b'MZ19scR4PsZChSR7A=="\n          crossorigin=""/>\n    <style>\n        body'
+                b'{background-color: #3d85c6;}\n        #main {\n            height: 84vh;\n '
+                b'           width: 90vw;\n            margin: 0;\n            position: abs'
+                b'olute;\n            top: 50%;\n            left: 50%;\n            -ms-tran'
+                b'sform: translate(-50%, -50%);\n            transform: translate(-50%, -50'
+                b'%);\n        }\n        .mapid{\n            height: 79vh;\n            widt'
+                b'h: 90vw;\n        }\n        #Pic{\n            width: 100%;\n        }\n'
+                b'        #topbar{            \n            margin-left: auto;\n            '
+                b'margin-right: auto;\n            left: 0;\n            right: 0;\n         '
+                b'   text-align: center; \n            padding: 1px;\n            color: whi'
+                b'te;           \n        }\n    </style>\n    <script src="https://unpkg.com'
+                b'/leaflet@1.7.1/dist/leaflet.js"\n            integrity="sha512-XQoYMqMTK8'
+                b'LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA'
+                b'=="\n            crossorigin=""></script>\n    <title>Telegram bot</title>'
+                b'\n</head>\n<body>\n    <div id = main>\n    <div id="topbar"><b>Name35</b>, '
+                b'click an object for the popup</div>\n    <div id="mapid" class="mapid"></'
+                b'div>\n    </div>    \n<script>\n    "use strict"\n    var Source_point ='
+                b" {'crs': {'properties': {'name': 'urn:ogc:def:crs:OGC:1.3:CRS84'}, 'type': '"
+                b"name'}, 'features': [{'geometry': {'coordinates': [45.0, 45.0], 'type': 'Poi"
+                b'nt\'}, \'properties\': {\'photo\': \'<a href="https://telegra.ph/test_path'
+                b'_photo35"><img id="Pic" src="https://telegra.ph/test_path_photo35"></a>\''
+                b", 'question': '<br>question35_1: answer35_1<br>question35_2: answer35_2<br>'"
+                b", 'time': '2021-11-20 22:45:00', 'user': 'Name35', 'video': '<a href"
+                b'="https://telegra.ph/test_path_video35">Click the link.</a>\'}, \'type\': \''
+                b"Feature'}, {'geometry': {'coordinates': [-45.0, -45.0], 'type': 'Point'}, 'p"
+                b"roperties': {'photo': 'None', 'question': '<br>question35_1: answer35_1<br>q"
+                b"uestion35_2: answer35_2<br>', 'time': '2021-11-20 22:45:00', 'user': 'Name35"
+                b"', 'video': 'None '}, 'type': 'Feature'}], 'name': 'Places', 'type': 'Featur"
+                b"eCollection'};\n    var Source_polygon = {'crs': {'properties': {'name': "
+                b"'urn:ogc:def:crs:OGC:1.3:CRS84'}, 'type': 'name'}, 'features': [{'geometry':"
+                b" {'coordinates': [[[[30.0, 30.0], [-30.0, -30.0], [10.0, 20.0], [30.0, 30.0]"
+                b']]], \'type\': \'MultiPolygon\'}, \'properties\': {\'photo\': \'<a href="'
+                b'https://telegra.ph/test_path_photo36"><img id="Pic" src="https://telegra.ph/'
+                b'test_path_photo36"></a>\', \'question\': \'<br>question35_1: answer36_1<br>q'
+                b"uestion35_2: answer36_2<br>', 'time': '2021-11-20 22:45:00', 'user': 'Name36"
+                b'\', \'video\': \'<a href="https://telegra.ph/test_path_video36">Click the li'
+                b"nk.</a>'}, 'type': 'Feature'}, {'geometry': {'coordinates': [[[[40.0, 10.0],"
+                b" [-40.0, -10.0], [70.0, 20.0], [40.0, 10.0]]]], 'type': 'MultiPolygon'}, 'pr"
+                b'operties\': {\'photo\': \'<a href="https://telegra.ph/test_path_photo37"><im'
+                b'g id="Pic" src="https://telegra.ph/test_path_photo37"></a>\', \'question\':'
+                b" '<br>question35_1: answer37_1<br>question35_2: answer37_2<br>', 'time': '20"
+                b'21-11-20 22:45:00\', \'user\': \'Name37\', \'video\': \'<a href="https://tel'
+                b'egra.ph/test_path_video37">Click the link.</a>\'}, \'type\': \'Feature\'}'
+                b"], 'name': 'Places', 'type': 'FeatureCollection'};\n    var map = L.map('"
+                b"mapid', {\n        center: [0.000000,12.500000],\n        zoom: 1\n    });\n"
+                b"    var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/li"
+                b'ght_all/{z}/{x}/{y}{r}.png\', {\n        attribution: \'&copy; <a href="htt'
+                b'ps://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; '
+                b'\' +\n            \'<a href="https://carto.com/attributions">CARTO</a>\''
+                b",\n        subdomains: 'abcd',\n        maxZoom: 19\n    });\n    var Esri_W"
+                b"orldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/servi"
+                b"ces/World_Imagery/'+\n    'MapServer/tile/{z}/{y}/{x}', {\tattribution: 'T"
+                b"iles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX,'+\n    '"
+                b"GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'"
+                b'\n    }).addTo(map);\n    var Points = L.geoJSON(Source_point,{\n        po'
+                b'intToLayer: function (feature, latlng) {\n            return L.marker(lat'
+                b"lng, {icon: L.icon({\n                    iconUrl: 'https://d2hbboszmbfzj"
+                b'c.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002dd'
+                b"b1a42.png',\n                    iconSize: [50, 50],\n                    "
+                b'iconAnchor: [10, 10],\n                    popupAnchor: [0, -10]\n        '
+                b'        })})\n        },\n        onEachFeature: function(feature, layer) '
+                b'{\n            layer.bindPopup(`\n            <p><b>Name:</b> ${feature.pr'
+                b'operties.user}\n            <br>\n            <b>Date/Time (non-local):</b'
+                b'> ${feature.properties.time}\n            <br>\n            <b>Question:</'
+                b'b> ${feature.properties.question}            \n            <b>Latitude:</'
+                b'b> <i>${feature.geometry.coordinates[1].toFixed(4)}</i>,\n            <b>'
+                b'Longitude:</b> <i>${feature.geometry.coordinates[0].toFixed(4)}</i>\n    '
+                b'        <br>\n            <b>Video:</b> ${feature.properties.video}      '
+                b'     \n            <br>\n            <b>Photo:</b> ${feature.properties.ph'
+                b'oto}\n            </p>`);\n        }\n    }).addTo(map);\n\n    var Polyg'
+                b'ons = L.geoJSON(Source_polygon,\n        {style: {},\n        onEachFeatur'
+                b'e: function(feature, layer) {\n            layer.bindPopup(`\n            '
+                b'<p><b>Name:</b> ${feature.properties.user}\n            <br>\n            '
+                b'<b>Date/Time (non-local):</b> ${feature.properties.time}\n            <br'
+                b'>\n            <b>Question:</b> ${feature.properties.question}\n          '
+                b'  <b>Video:</b> ${feature.properties.video}           \n            <br>\n'
+                b'            <b>Photo:</b> ${feature.properties.photo}\n            </p>`)'
+                b';\n        }    \n    }).addTo(map);\n\n    var baseMaps = {        \n   '
+                b'     "Imagery": Esri_WorldImagery,\n        "Map": CartoDB_Positron\n    }'
+                b';\n    var vectorL = {\n        "Points": Points,\n        "Polygons":Polyg'
+                b'ons\n    };\n    L.control.layers(baseMaps,vectorL).addTo(map);\n    var co'
+                b'unt = 0\n    var scbr = L.control.scale({imperial:false})\n    map.addEven'
+                b'tListener("zoomend",function (){\n        if (map.getZoom() > 5 && count '
+                b'=== 0){\n            scbr.addTo(map);\n            count ++;\n        }\n   '
+                b'     else if (map.getZoom() <= 5) {\n            scbr.remove();\n         '
+                b'   count = 0;\n        }\n    })\n</script>\n</body>\n</html> ')
 
     @property
     def result_gjson_point(self):
