@@ -34,7 +34,7 @@ Python, PostgreSQL & PostGIS, HTML5, JavaScript, Bash
 Amazon Web Services.
 
 The author is aware about the serverless architecture in AWS using Amazon API Gateway & 
-AWS Lambda with . However, to get deeper experience in AWS the classic approach 
+AWS Lambda. However, to get deeper experience in AWS the classic approach 
 was chosen.
 
 - Two Amazon S3 buckets were created. One for connecting the current repository to AWS 
