@@ -51,4 +51,4 @@ AWS services
 - Amazon EC2 Launch Template was fully configured to instantly create a virtual machine
 and start the bot on its boot
 - Amazon EC2 Auto Scaling group was created (within several AZs) to automatically keep 
-the required number of running EC2 instances started from the Launch Template
+the required number of running EC2 instances started with the Launch Template
