@@ -39,14 +39,13 @@ was chosen.
 
 - Two Amazon S3 buckets were created. One for connecting the current repository to AWS 
 via Amazon CodeDeploy. Another as a media file storage with the proper permissions and
-Amazon CloudFront as a CDN. Every bucket has the access point for connecting to a VPC 
-via its endpoint.
+Amazon CloudFront as a CDN.
 - The Virtual Private Cloud (VPC) was created in an AWS region with several subnets
 in different availability zones (AZ) of the region. The Internet gateway was assigned 
 to the VPC. Proper route tables were created and assigned to the subnets
 - Amazon RDS PostgreSQL database was created with a subnet group incorporating several
 subnets in several AZs
-- Proper security groups and IAM roles were created to protect EC2 instances and other
+- Proper S3 access points, security groups and IAM roles were created to protect EC2 instances and other
 AWS services
 - Amazon EC2 Launch Template was fully configured to instantly create a virtual machine
 and start the bot on its boot
