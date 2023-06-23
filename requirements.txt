@@ -1,4 +1,4 @@
-certifi==2021.10.8
+certifi
 charset-normalizer==2.0.7
 idna==3.3
 psycopg2-binary==2.9.1
@@ -13,4 +13,3 @@ crc32c
 fastapi
 uvicorn
 moto
-
