@@ -6,4 +6,3 @@ __pycache__
 .env
 temp?.py
 *.sh
-start.py
