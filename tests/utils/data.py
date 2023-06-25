@@ -1,4 +1,3 @@
-import os
 import io
 import datetime
 from engine.utils.utils import DotDict
@@ -528,7 +527,7 @@ class Result:
 
     @property
     def result_save_media(self):
-        return f'{os.environ["CLOUDFRONT"]}/11151565645651.jpg'
+        return 'd352cxgwvplimd.cloudfront.net/11151565645651.jpg'
 
     @property
     def result_extent(self):
