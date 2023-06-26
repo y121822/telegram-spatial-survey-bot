@@ -749,6 +749,9 @@ class CreateWebMap(Survey, PointPolygon, ProcessData):
                                           adjust['center_lat'], adjust['center_long'], self.get_scale(distance))
 
         output = io.BytesIO(str.encode(map_template.html_1 + modified + map_template.html_3, 'utf-8'))
+        import pprint
+        pprint.pprint(output)
+
         output.name = f'{call.from_user.first_name}.html'
 
         return output
