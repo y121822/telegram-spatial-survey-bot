@@ -68,7 +68,7 @@ html_3 = '''
     var Points = L.geoJSON(Source_point,{
         pointToLayer: function (feature, latlng) {
             return L.marker(latlng, {icon: L.icon({
-                    iconUrl: 'https://d2hbboszmbfzjc.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002ddb1a42.png',
+                    iconUrl: 'https://d352cxgwvplimd.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002ddb1a42.png',
                     iconSize: [50, 50],
                     iconAnchor: [10, 10],
                     popupAnchor: [0, -10]
