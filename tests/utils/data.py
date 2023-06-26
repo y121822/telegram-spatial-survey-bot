@@ -688,8 +688,8 @@ class Result:
                 b"GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'"
                 b'\n    }).addTo(map);\n    var Points = L.geoJSON(Source_point,{\n        po'
                 b'intToLayer: function (feature, latlng) {\n            return L.marker(lat'
-                b"lng, {icon: L.icon({\n                    iconUrl: 'https://d2hbboszmbfzj"
-                b'c.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002dd'
+                b"lng, {icon: L.icon({\n                    iconUrl: 'https://d352cxgwvplim"
+                b'd.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002dd'
                 b"b1a42.png',\n                    iconSize: [50, 50],\n                    "
                 b'iconAnchor: [10, 10],\n                    popupAnchor: [0, -10]\n        '
                 b'        })})\n        },\n        onEachFeature: function(feature, layer) '
