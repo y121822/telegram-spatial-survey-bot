@@ -611,9 +611,5 @@ def callback_handler(call):
 if __name__ == "__main__":
 
     # New webhook
-    print(os.environ['HOST'])
-    print(os.environ['PORT'])
-    print(os.environ['CERT'])
-    print(os.environ['PKEY'])
     bot.run_webhooks(listen=os.environ['HOST'], port=int(os.environ['PORT']),
                      certificate=os.environ['CERT'], certificate_key=os.environ['PKEY'])
