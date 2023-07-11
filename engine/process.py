@@ -448,12 +448,12 @@ class Shp(PointPolygon, TestID):
             w.field('USER_NAME')
             w.field('SURVEY')
             w.field('TIME')
-            w.field('PHOTO')
-            w.field('VIDEO')
+            w.field('PHOTO', size=255)
+            w.field('VIDEO', size=255)
 
             for i in range(count):
                 w.field(f"QUEST_{i + 1}")
-                w.field(f"ANS_{i + 1}")
+                w.field(f"ANS_{i + 1}", size=255)
 
             cursor.execute(f"select id, user_name, survey, to_char(entr_time, 'DD-Mon-YYYY HH24:MI:SS'), "
                            f"photo, video, st_astext({geom_type}) from {self.db}features where "
