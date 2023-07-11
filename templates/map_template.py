@@ -70,8 +70,8 @@ html_3 = '''
             return L.marker(latlng, {icon: L.icon({
                     iconUrl: 'https://d352cxgwvplimd.cloudfront.net/6cbd55f713c9a4ed6793823ac1359add55ebc127060d6433ccf324002ddb1a42.png',
                     iconSize: [50, 50],
-                    iconAnchor: [10, 10],
-                    popupAnchor: [0, -10]
+                    iconAnchor: [25, 40],
+                    popupAnchor: [0, -35]
                 })})
         },
         onEachFeature: function(feature, layer) {
